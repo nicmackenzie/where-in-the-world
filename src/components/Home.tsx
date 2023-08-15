@@ -38,7 +38,7 @@ function Home({
         <Select onSelectedRegion={onSelectedRegion} />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 mt-8">
-        {countries.length &&
+        {countries.length > 0 &&
           countries.map(country => (
             <CountryItem
               key={country.name}
